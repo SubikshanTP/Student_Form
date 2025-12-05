@@ -6,7 +6,7 @@ namespace Student_Form.AutoMapper
 {
     public class StudentMapper:Profile
     {
-        //-
+        //-hbhbihbi
         
         public StudentMapper()
         {
