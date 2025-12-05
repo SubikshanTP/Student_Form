@@ -135,7 +135,7 @@ namespace Student_Form.Controllers
 
 
 
-
+        // Only authorized users can access this API
         [Authorize]
         [HttpGet("byname/{studentName}")]
 
