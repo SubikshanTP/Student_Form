@@ -17,7 +17,7 @@ namespace Student_Form.Repositry.Implementation
             this.mapper = mapper;
             this.studentDbcontext = studentDbcontext;
         }
-
+        //delete curd
         public async Task<bool> DeleteAsync(int Id)
         {
 
