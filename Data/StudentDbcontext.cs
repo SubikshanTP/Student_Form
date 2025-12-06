@@ -5,7 +5,7 @@ namespace Student_Form.Data
 {
     public class StudentDbcontext:DbContext
     {
-///chnged
+///CHANGED
         public StudentDbcontext(DbContextOptions <StudentDbcontext>options):base(options)
         {
             
