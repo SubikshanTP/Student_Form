@@ -89,5 +89,7 @@ namespace Student_Form.Repositry.Implementation
             var res = mapper.Map<StudentAdmissionDto>(result);
             return res;
         }
+
+        //summa
     }
 }
