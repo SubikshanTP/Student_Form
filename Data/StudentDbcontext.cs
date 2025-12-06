@@ -12,6 +12,7 @@ namespace Student_Form.Data
         }
 
 
+        
 
         public DbSet <StudentAdmission> StudentAdmissions_Table { get; set; }
     }
