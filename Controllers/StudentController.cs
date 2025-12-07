@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;
 using Microsoft.IdentityModel.Tokens;
+using Student_Form.Filter;
 using Student_Form.Model.Dto;
 using Student_Form.Repositry.Interface;
 using System.IdentityModel.Tokens.Jwt;
@@ -12,6 +13,7 @@ using System.Text;
 
 namespace Student_Form.Controllers
 {
+    [TypeFilter(typeof(CustomExceptionFilter))]
     [Route("api/[controller]")]
     [ApiController]
     public class StudentController : ControllerBase

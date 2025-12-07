@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Student_Form.AutoMapper;
 using Student_Form.Data;
+using Student_Form.Filter;
 using Student_Form.Repositry.Implementation;
 using Student_Form.Repositry.Interface;
 using System.Text;
@@ -75,6 +76,13 @@ builder.Services.AddCors(options =>
     .AllowAnyMethod()
     .AllowAnyHeader());
 });
+
+//exception filter
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<CustomExceptionFilter>();
+});
+
 
 var app = builder.Build();
 
