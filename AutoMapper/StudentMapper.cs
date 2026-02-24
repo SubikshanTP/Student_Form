@@ -10,7 +10,7 @@ namespace Student_Form.AutoMapper
         public StudentMapper()
         {
             CreateMap<StudentAdmissionDto,StudentAdmission>().ForMember(dest=>dest.Class,opt =>opt.MapFrom(src=>src.Classs)).ReverseMap();
-            
+          // subikshan
         }
     }
 }
